@@ -17,12 +17,6 @@ This project showcases my work, skills, certifications, and projects in a clean,
 
 ---
 
-## 📸 Preview
-
-![Portfolio Preview](public/sr.png)
-
----
-
 ## 🛠️ Built With
 
 - [Next.js](https://nextjs.org/)
