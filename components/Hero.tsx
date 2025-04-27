@@ -37,24 +37,24 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center gap-2 bg-[#1E1538] rounded-full px-4 py-2 mb-6 md:mb-8 mt-16">
+            <div className="inline-flex items-center gap-2 bg-[#1E1538] rounded-full px-4 py-2 mb-6 md:mb-8 mt-24">
               <span className="text-[#9D5EFF]">✨</span>
               <span className="text-[#9D5EFF]">Creating Tomorrow, Today.</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-2 md:mb-4">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-0 md:mb-1">
               Full Stack
             </h1>
 
-            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-4 md:mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-1 md:mb-2">
               Developer
             </h2>
 
-            <div className="mb-6 md:mb-8">
+            <div className="mb-2 md:mb-4">
               <TypewriterText className="text-[#37233a]" />
             </div>
 
-            <p className="text-black text-base md:text-lg max-w-2xl mb-6 md:mb-8">
+            <p className="text-black text-base md:text-lg max-w-2xl mb-2 md:mb-4">
               Software developer with 3.5+ years of experience in designing and delivering high-performance, scalable software solutions.
             </p>
 
@@ -72,13 +72,13 @@ const Hero = () => {
                   onClick={() => handlePortfolioTabClick('experience')}
                   className="px-4 py-2.5 md:px-6 md:py-3 bg-[#1E1538] text-[#b0a3b5] rounded-lg hover:bg-[#2A1B4A] transition-colors flex items-center gap-2 text-sm md:text-base"
                 >
-                  Experience <span>↗</span>
+                  Experience <span>💼</span>
                 </button>
                 <button
                   onClick={() => handlePortfolioTabClick('projects')}
                   className="px-4 py-2.5 md:px-6 md:py-3 bg-[#1E1538] text-[#b0a3b5] rounded-lg hover:bg-[#2A1B4A] transition-colors flex items-center gap-2 text-sm md:text-base"
                 >
-                  Projects <span>↗</span>
+                  Projects <span>🚀</span>
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
@@ -107,7 +107,7 @@ const Hero = () => {
           >
             <div className="relative w-[400px] h-[400px]">
               {/* Gradient Shadow */}
-              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-black via-black to-black opacity-75 blur-2xl"></div>
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-white via-white to-white opacity-75 blur-2xl"></div>
               {/* Profile Picture Container */}
               <div className="relative w-full h-full rounded-full overflow-hidden bg-[#1E1538]">
                 <Image

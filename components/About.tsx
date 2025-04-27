@@ -58,49 +58,80 @@ const About = () => {
             </div>
               
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            <motion.div
+              {/* YEARS OF EXPERIENCE */}
+              <motion.button
+                type="button"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="bg-[#1E1538] p-6 md:p-8 rounded-lg"
+                className="relative bg-[#23213a]/80 rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-lg min-h-[200px] focus:outline-none focus:ring-2 focus:ring-[#9D5EFF] cursor-pointer"
+                onClick={() => handlePortfolioTabClick('experience')}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xl md:text-2xl text-white">🌐</span>
+                <div className="flex items-start justify-between">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="bg-white/10 rounded-full w-14 h-14 flex items-center justify-center mb-2">
+                      <span className="text-3xl text-white">🌐</span>
+                    </div>
+                    <div>
+                      <h3 className="uppercase text-white text-base md:text-lg font-semibold tracking-wider">Years of Experience</h3>
+                      <p className="text-gray-400 text-xs md:text-sm mt-1">Continuous learning journey</p>
+                    </div>
+                  </div>
                   <span className="text-4xl md:text-5xl font-bold text-white">3.5</span>
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">YEARS OF EXPERIENCE</h3>
-                <p className="text-[#b0a3b5] text-sm md:text-base">Continuous learning journey</p>
-              </motion.div>
-              <motion.div
+                <span className="absolute bottom-4 right-6 text-gray-400 text-xl">↗</span>
+              </motion.button>
+
+              {/* TOTAL PROJECTS */}
+              <motion.button
+                type="button"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-[#1E1538] p-6 md:p-8 rounded-lg"
+                className="relative bg-[#23213a]/80 rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-lg min-h-[200px] focus:outline-none focus:ring-2 focus:ring-[#9D5EFF] cursor-pointer"
+                onClick={() => handlePortfolioTabClick('projects')}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xl md:text-2xl text-white">💻</span>
+                <div className="flex items-start justify-between">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="bg-white/10 rounded-full w-14 h-14 flex items-center justify-center mb-2">
+                      <span className="text-3xl text-white">&lt;&gt;</span>
+                    </div>
+                    <div>
+                      <h3 className="uppercase text-white text-base md:text-lg font-semibold tracking-wider">Total Projects</h3>
+                      <p className="text-gray-400 text-xs md:text-sm mt-1">Innovative web & mobile solutions crafted</p>
+                    </div>
+                  </div>
                   <span className="text-4xl md:text-5xl font-bold text-white">3</span>
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">TOTAL PROJECTS</h3>
-                <p className="text-[#b0a3b5] text-sm md:text-base">Innovative web & mobile solutions crafted</p>
-              </motion.div>
+                <span className="absolute bottom-4 right-6 text-gray-400 text-xl">↗</span>
+              </motion.button>
 
-              <motion.div
+              {/* CERTIFICATES */}
+              <motion.button
+                type="button"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-[#1E1538] p-6 md:p-8 rounded-lg"
+                className="relative bg-[#23213a]/80 rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-lg min-h-[200px] focus:outline-none focus:ring-2 focus:ring-[#9D5EFF] cursor-pointer"
+                onClick={() => handlePortfolioTabClick('certificates')}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xl md:text-2xl text-white">🏆</span>
+                <div className="flex items-start justify-between">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="bg-white/10 rounded-full w-14 h-14 flex items-center justify-center mb-2">
+                      <span className="text-3xl text-white">🎖️</span>
+                    </div>
+                    <div>
+                      <h3 className="uppercase text-white text-base md:text-lg font-semibold tracking-wider">Certificates</h3>
+                      <p className="text-gray-400 text-xs md:text-sm mt-1">Professional skills validated</p>
+                    </div>
+                  </div>
                   <span className="text-4xl md:text-5xl font-bold text-white">7</span>
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">CERTIFICATES</h3>
-                <p className="text-[#b0a3b5] text-sm md:text-base">Professional skills validated</p>
-              </motion.div>
+                <span className="absolute bottom-4 right-6 text-gray-400 text-xl">↗</span>
+              </motion.button>
             </div>
           </motion.div>
         </div>

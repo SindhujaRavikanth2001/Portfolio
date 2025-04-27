@@ -7,7 +7,7 @@
   --dark-bg: #0F0817;
   --card-bg: #1E1538;
   --card-hover: #2A1B4A;
-  --bg-color-1: #4B2B4D;  /* Deep purple */
+  --bg-color-1: #8f5e92;  /* Deep purple */
   --bg-color-2: #624A6C;  /* Medium purple */
   --bg-color-3: #9B8599;  /* Mauve purple */
   --bg-color-4: #624A6C;  /* Light lavender */
@@ -64,12 +64,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--purple-primary);
+  background: #573C5E;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--card-hover);
+  background: #573C5E;
 }
 
 /* Additional custom styles */
