@@ -54,7 +54,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
-        isScrolled ? 'md:bg-[#b0a3b5] md:backdrop-blur-md md:py-4' : 'py-6'
+        isScrolled ? 'bg-[#b0a3b5] backdrop-blur-md py-4' : 'py-6'
       }`}
     >
       <nav className="container mx-auto px-4">
@@ -63,7 +63,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('home')}
             className="text-3xl font-bold transition-colors flex items-center gap-2"
           >
-            <span className="text-[#843052] hover:text-[#9D5EFF] transition-all">
+            <span className="text-[#843052] hover:text-[#472557] transition-all">
               Sindhuja Ravikanth
             </span>
             <span className="text-sm text-white font-normal">(she/her)</span>
@@ -75,7 +75,7 @@ export default function Navbar() {
               <li key={item.name}>
               <button
                   onClick={() => item.tab ? handlePortfolioTabClick(item.tab) : scrollToSection(item.href.slice(1))}
-                  className="text-lg text-black hover:text-[#9D5EFF] transition-colors font-bold"
+                  className="text-lg text-black hover:text-[#472557] transition-colors font-bold"
               >
                   {item.name}
               </button>
@@ -99,7 +99,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <motion.div
-            className="px-2 pt-2 pb-3 space-y-1 md:hidden bg-white"
+            className="px-2 pt-2 pb-3 space-y-1 md:hidden bg-[#b0a3b5]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
@@ -108,7 +108,7 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-lg text-black hover:text-[#9D5EFF] transition-colors font-bold"
+                className="block px-3 py-2 text-lg text-black hover:text-[#472557] transition-colors font-bold"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsOpen(false);
