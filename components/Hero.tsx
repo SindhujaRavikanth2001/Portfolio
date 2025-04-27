@@ -107,7 +107,7 @@ const Hero = () => {
           >
             <div className="relative w-[400px] h-[400px]">
               {/* Gradient Shadow */}
-              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-white via-white to-white opacity-75 blur-2xl"></div>
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-black via-black to-black opacity-75 blur-2xl"></div>
               {/* Profile Picture Container */}
               <div className="relative w-full h-full rounded-full overflow-hidden bg-[#1E1538]">
                 <Image

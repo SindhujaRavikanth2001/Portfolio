@@ -53,8 +53,8 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md py-4' : 'py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
+        isScrolled ? 'md:bg-[#b0a3b5] md:backdrop-blur-md md:py-4' : 'py-6'
       }`}
     >
       <nav className="container mx-auto px-4">
@@ -63,10 +63,10 @@ export default function Navbar() {
             onClick={() => scrollToSection('home')}
             className="text-3xl font-bold transition-colors flex items-center gap-2"
           >
-            <span className="text-black hover:text-[#9D5EFF] transition-all">
+            <span className="text-[#843052] hover:text-[#9D5EFF] transition-all">
               Sindhuja Ravikanth
             </span>
-            <span className="text-sm text-gray-400 font-normal">(she/her)</span>
+            <span className="text-sm text-white font-normal">(she/her)</span>
           </button>
 
           {/* Desktop Menu */}

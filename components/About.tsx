@@ -39,7 +39,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-black">About Me</h2>
             
             <p className="text-black text-base md:text-xl max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
-              Hello, I'm <span className="text-[#37233a] font-semibold">Sindhuja Ravikanth</span> a passionate software developer dedicated to creating robust and scalable web applications. With expertise in Java, Python, JavaScript, and MySQL, I thrive on tackling complex challenges, automating workflows, and mentoring teams. Currently advancing my skills through an M.S. in Computer Science, I'm driven to continuously learn and grow. I'm actively seeking opportunities to innovate, collaborate, and make a lasting impact in technology, with a future focus on AI and data science.
+              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span> a passionate software developer dedicated to creating robust and scalable web applications. With expertise in Java, Python, JavaScript, and MySQL, I thrive on tackling complex challenges, automating workflows, and mentoring teams. Currently advancing my skills through an M.S. in Computer Science, I'm driven to continuously learn and grow. I'm actively seeking opportunities to innovate, collaborate, and make a lasting impact in technology, with a future focus on AI and data science.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mb-12 md:mb-16">
@@ -71,7 +71,7 @@ const About = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col items-start gap-4">
                     <div className="bg-white/10 rounded-full w-14 h-14 flex items-center justify-center mb-2">
-                      <span className="text-3xl text-white">🌐</span>
+                      <span className="text-3xl text-white">👩‍💻</span>
                     </div>
                     <div>
                       <h3 className="uppercase text-white text-base md:text-lg font-semibold tracking-wider">Years of Experience</h3>
@@ -96,7 +96,7 @@ const About = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col items-start gap-4">
                     <div className="bg-white/10 rounded-full w-14 h-14 flex items-center justify-center mb-2">
-                      <span className="text-3xl text-white">&lt;&gt;</span>
+                      <span className="text-3xl text-white">📁</span>
                     </div>
                     <div>
                       <h3 className="uppercase text-white text-base md:text-lg font-semibold tracking-wider">Total Projects</h3>
