@@ -53,8 +53,8 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md py-4' : 'py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
+        isScrolled ? 'md:bg-white/90 md:backdrop-blur-md md:py-4' : 'py-6'
       }`}
     >
       <nav className="container mx-auto px-4">
@@ -99,7 +99,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <motion.div
-            className="px-2 pt-2 pb-3 space-y-1 md:hidden"
+            className="px-2 pt-2 pb-3 space-y-1 md:hidden bg-white"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}

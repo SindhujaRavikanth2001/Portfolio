@@ -243,10 +243,9 @@ const Portfolio = () => {
         "Handled over 1,000 API requests per day by designing and optimizing 15+ RESTful APIs used across third-party tools like Postman and Node.js.",
         "Boosted operational efficiency by 20% by automating internal workflows with user-level approval mechanisms.",
         "Improved network visibility by 70% by engineering IP-to-identity reporting via Microsoft Active Directory for 1,000+ users.",
-        "Increased engineering team output by 35% by mentoring 3 interns in debugging, software engineering principles, and best practices.",
-        "Enhanced alert delivery speed by implementing a multi-channel alerting system (Teams, Telegram, email), reducing downtime response latency.",
+        "Enhanced alert delivery speed by implementing a multi-channel alerting system, reducing downtime response latency.",
         "Streamlined terminal interactions by building CLIs for frequent dev/admin tasks, improving productivity across teams.",
-        "Ensured code quality using CI/CD pipelines and tools like Jenkins, Git, Docker, and SonarQube.",
+        "Ensured code quality using CI/CD pipelines and tools like Jenkins, Git, and SonarQube.",
         "Improved public web presence and user engagement as measured by a 40% increase in daily page views by developing and maintaining the company website using JSP, HTML, CSS, and JavaScript."
       ]
     },
