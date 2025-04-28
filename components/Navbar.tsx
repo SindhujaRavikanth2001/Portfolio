@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <button
             onClick={() => scrollToSection('home')}
-            className="text-3xl font-bold transition-colors flex items-center gap-2"
+            className="text-xl md:text-3xl font-bold transition-colors flex items-center gap-2"
           >
             <span className="text-[#843052] hover:text-[#472557] transition-all">
               Sindhuja Ravikanth

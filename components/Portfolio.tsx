@@ -28,6 +28,7 @@ const Portfolio = () => {
   const [showAllTechStack, setShowAllTechStack] = useState(false);
   const [showAllExperiences, setShowAllExperiences] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
   // Helper for random position
   const getRandomPosition = () => ({
@@ -70,14 +71,14 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Tourist Recommendation System',
-      description: 'Tourist Recommendation System is a Flask web app that recommends travel destinations based on user preferences like clubs, museums, and restaurants. Using machine learning, it delivers personalized suggestions through an easy-to-use, interactive platform.',
+      description: 'Tourist Recommendation System is a Flask-based web application that personalizes travel suggestions using machine learning. Users rate their interests across categories like restaurants, clubs, museums, and resorts, and the system predicts an ideal destination using a Decision Tree classifier. Built with Python, Flask, scikit-learn, and a custom dataset, the project highlights end-to-end full-stack development, ML integration into web apps, real-time user interaction, and personalized recommendation pipelines.',
       image: '/projects/tourist.png',
       technologies: 'Python, HTML, Bootstrap',
       github: 'https://github.com/SindhujaRavikanth2001/TouristRecommendationSystem'
     },
     {
       title: "The Lion Cub's Journey",
-      description: 'Lion Cub’s Journey is a 2D survival adventure game where players guide a young cub through dangerous wilderness, avoiding snakes and collecting meat to regain health. Built in Processing, it features vibrant visuals, strategic gameplay, and progressive levels.',
+      description: "Lion Cub’s Journey is a 2D top-down survival game where players guide a young lion cub back to its cave, navigating dangers and managing health. Built using Java with the Processing framework, the game features character movement, collision detection, random enemy generation, health restoration via collectibles, and progressive difficulty across three levels. Players dodge snakes, collect meat to regain health, and advance through increasingly challenging terrains. The project showcases my skills in game design, object-oriented programming, UI creation, and interactive gameplay mechanics.",
       image: '/projects/lion.png',
       technologies: 'Processing',
       github: 'https://github.com/SindhujaRavikanth2001/LionCubJourney'
@@ -91,7 +92,7 @@ const Portfolio = () => {
     // },
     {
       title: 'Dutchess County Bus Transportation System',
-      description: 'DCBTS is a database-powered web application that streamlines public transportation in Dutchess County. It offers user-friendly trip planning, real-time updates, and an admin portal for managing buses, routes, and tickets, making local transit smarter and more accessible.',
+      description: 'Dutchess County Bus Transportation System (DCBTS) is a database-driven web application designed to modernize public transit management for commuters, tourists, and administrators. The system enables users to plan trips, book reservations, view schedules, and receive holiday notifications, while providing administrators with a portal to manage buses, routes, and ticketing efficiently. Built with MySQL, HTML, CSS, and JavaScript, the project emphasizes real-time bus route searches, fare estimations, data optimization through bulk loading, and secure database design, showcasing full-stack development, system modeling, and performance tuning skills.',
       image: '/projects/bus.png',
       technologies: 'Python, MySQL',
       github: 'https://github.com/SindhujaRavikanth2001/DutchessCountyBusTransportationSystem'
@@ -334,12 +335,13 @@ const Portfolio = () => {
               {visibleProjects.map((project, index) => (
               <motion.div
                 key={project.title}
-                  className="bg-[#1E1538] rounded-2xl overflow-hidden hover:bg-[#2A1B4A] transition-colors flex flex-col"
+                className="bg-[#1E1538] rounded-2xl overflow-hidden hover:bg-[#2A1B4A] transition-colors flex flex-col cursor-pointer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
+                onClick={() => setSelectedProject(project)}
               >
-                  <div className="relative h-40 md:h-48">
+                <div className="relative h-40 md:h-48">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -347,21 +349,22 @@ const Portfolio = () => {
                     className="object-cover"
                   />
                 </div>
-                  <div className="p-4 md:p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#b0a3b5]">{project.title}</h3>
-                    <p className="text-white text-sm md:text-base mb-4 flex-grow">{project.description}</p>
-                    <p className="text-[#9D5EFF] text-sm mb-4">{project.technologies}</p>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white bg-[#2A1B4A] hover:bg-[#9D5EFF] transition-colors py-2 px-4 rounded-lg text-center text-sm md:text-base flex items-center justify-center gap-2"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
-                      GitHub
-                    </a>
+                <div className="p-4 md:p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#b0a3b5]">{project.title}</h3>
+                  <div className="flex-grow"></div>
+                  <p className="text-[#9D5EFF] text-sm mb-4">{project.technologies}</p>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white bg-[#573c5e] hover:bg-[#4D2E50] transition-colors py-2 px-4 rounded-lg text-center text-sm md:text-base flex items-center justify-center gap-2 mt-2"
+                    onClick={e => e.stopPropagation()}
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -375,6 +378,28 @@ const Portfolio = () => {
             >
                 {showAllProjects ? 'See Less ↑' : 'See More ↓'}
             </motion.button>
+            )}
+            {/* Modal for project description */}
+            {selectedProject && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="bg-[#1e1538] rounded-lg p-8 max-w-lg w-full relative"
+                >
+                  <button
+                    className="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-800"
+                    onClick={() => setSelectedProject(null)}
+                    aria-label="Close"
+                  >
+                    &times;
+                  </button>
+                  <h3 className="text-2xl font-bold mb-4 text-[#b0a3b5]">{selectedProject.title}</h3>
+                  <p className="text-white">{selectedProject.description}</p>
+                  <p className="text-[#9D5EFF] text-sm mb-4 mt-4">{selectedProject.technologies}</p>
+                </motion.div>
+              </div>
             )}
           </div>
         )}

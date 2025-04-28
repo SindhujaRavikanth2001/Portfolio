@@ -91,7 +91,7 @@ export default function Contact() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-[#573c5e] text-white font-semibold text-lg shadow-lg hover:bg-[#7e3261] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-[#573c5e] text-white font-semibold text-lg shadow-lg hover:bg-[#4D2E50] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                     disabled={loading}
                   >
                     <FiSend className="text-xl" />
@@ -109,21 +109,21 @@ export default function Contact() {
               <div className="rounded-2xl bg-[#1e1538] backdrop-blur-xl p-4 md:p-6 h-full flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white text-center mb-4">Connect With Me</h3>
                 <div className="space-y-3">
-                  <a href="https://www.linkedin.com/in/sindhuja-ravikanth/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#7e3261] transition-all">
+                  <a href="https://www.linkedin.com/in/sindhuja-ravikanth/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#4D2E50] transition-all">
                     <span className="bg-[#0077b5]/20 p-2 rounded-lg"><FiLinkedin className="text-[#0077b5] text-2xl" /></span>
                     <div>
                       <span className="block font-bold text-white">LinkedIn</span>
                       <span className="block text-gray-400 text-sm">sindhuja-ravikanth</span>
                     </div>
                   </a>
-                  <a href="mailto:tcp.sindhuja@gmail.com" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#7e3261] transition-all">
+                  <a href="mailto:tcp.sindhuja@gmail.com" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#4D2E50] transition-all">
                     <span className="bg-[#9D5EFF]/20 p-2 rounded-lg"><FiMail className="text-[#9D5EFF] text-2xl" /></span>
                     <div>
                       <span className="block font-bold text-white">Mail</span>
                       <span className="block text-gray-400 text-sm">tcp.sindhuja@gmail.com</span>
                     </div>
                   </a>
-                  <a href="https://github.com/SindhujaRavikanth2001" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#7e3261] transition-all">
+                  <a href="https://github.com/SindhujaRavikanth2001" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-3 rounded-xl bg-[#573c5e] hover:bg-[#4D2E50] transition-all">
                     <span className="bg-gray-400/20 p-2 rounded-lg"><FiGithub className="text-gray-300 text-2xl" /></span>
                     <div>
                       <span className="block font-bold text-white">Github</span>
@@ -136,6 +136,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-8 text-center text-[#1e1538] text-sm">© 2025 - All Rights Reserved.</div>
+        <div className="text-center text-[#1e1538] text-sm">Sindhuja Ravikanth</div>
       </div>
     </section>
   );

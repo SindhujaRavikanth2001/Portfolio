@@ -39,7 +39,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-black">About Me</h2>
             
             <p className="text-black text-base md:text-xl max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
-              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span> a passionate software developer dedicated to creating robust and scalable web applications. With expertise in Java, Python, JavaScript, and MySQL, I thrive on tackling complex challenges, automating workflows, and mentoring teams. Currently advancing my skills through an M.S. in Computer Science, I'm driven to continuously learn and grow. I'm actively seeking opportunities to innovate, collaborate, and make a lasting impact in technology, with a future focus on AI and data science.
+              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span> a passionate software developer dedicated to creating robust and scalable web applications. With expertise in Java, Python, JavaScript, MySQL and much more, I thrive on tackling complex challenges, automating workflows, and mentoring teams. Currently advancing my skills through an M.S. in Computer Science, I'm driven to continuously learn and grow. I'm actively seeking opportunities to innovate, collaborate, and make a lasting impact in technology, with a future focus on AI and software development.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mb-12 md:mb-16">
@@ -50,10 +50,10 @@ const About = () => {
                 <span className="text-xl">📄</span> Download CV
               </a>
               <button
-                onClick={() => handlePortfolioTabClick('projects')}
+                onClick={() => scrollToSection('contact')}
                 className="inline-flex items-center justify-center gap-2 bg-[#1E1538] text-[#9D5EFF] px-4 py-2.5 md:px-6 md:py-3 rounded-lg hover:bg-[#2A1B4A] transition-colors text-sm md:text-base"
               >
-                <span className="text-xl">&lt;/&gt;</span> View Projects
+                <span className="text-xl">✉</span> Contact Me
               </button>
             </div>
               
