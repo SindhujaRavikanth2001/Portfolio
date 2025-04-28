@@ -20,7 +20,7 @@ interface Experience {
 }
 
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState('projects');
+  const [activeTab, setActiveTab] = useState('experience');
   const [selectedCertificate, setSelectedCertificate] = useState<Certificate | null>(null);
   const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -353,6 +353,7 @@ const Portfolio = () => {
                   <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#b0a3b5]">{project.title}</h3>
                   <div className="flex-grow"></div>
                   <p className="text-[#9D5EFF] text-sm mb-4">{project.technologies}</p>
+                  <p className="text-white text-right text-sm mb-4">View Details ↗</p>
                   <a
                     href={project.github}
                     target="_blank"
