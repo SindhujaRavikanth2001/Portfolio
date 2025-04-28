@@ -410,24 +410,44 @@ const Portfolio = () => {
           <div className="space-y-6 md:space-y-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {visibleCertificates.map((cert, index) => (
-              <motion.div
-                key={cert.title}
-                  className="bg-[#1E1538] rounded-2xl overflow-hidden p-4 cursor-pointer hover:bg-[#2A1B4A] transition-all"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                <motion.div
+                  key={cert.title}
+                  className="bg-[#1E1538] rounded-2xl overflow-hidden p-4 cursor-pointer hover:bg-[#2A1B4A] transition-all flex flex-col h-full relative group"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
                   onClick={() => setSelectedCertificate(cert)}
-              >
+                >
                   <div className="relative h-40 md:h-48 mb-4">
-                  <Image
-                    src={cert.image}
-                    alt={cert.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                  <h3 className="text-lg md:text-xl font-semibold mb-2">{cert.title}</h3>
-                  <p className="text-gray-400 text-sm md:text-base">{cert.issuer}</p>
+                    <Image
+                      src={cert.image}
+                      alt={cert.title}
+                      fill
+                      className="object-contain"
+                    />
+                    <div className="absolute inset-0 bg-[#1E1538]/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="w-12 h-12 mb-2">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                          {/* Top Left Corner */}
+                          <path d="M0,25 C0,11.193 11.193,0 25,0 L35,0 L35,10 L25,10 C16.716,10 10,16.716 10,25 L10,35 L0,35 Z" fill="white"/>
+                          
+                          {/* Top Right Corner */}
+                          <path d="M65,0 L75,0 C88.807,0 100,11.193 100,25 L100,35 L90,35 L90,25 C90,16.716 83.284,10 75,10 L65,10 Z" fill="white"/>
+                          
+                          {/* Bottom Left Corner */}
+                          <path d="M0,65 L0,75 C0,88.807 11.193,100 25,100 L35,100 L35,90 L25,90 C16.716,90 10,83.284 10,75 L10,65 Z" fill="white"/>
+                          
+                          {/* Bottom Right Corner */}
+                          <path d="M90,65 L90,75 C90,83.284 83.284,90 75,90 L65,90 L65,100 L75,100 C88.807,100 100,88.807 100,75 L100,65 Z" fill="white"/>
+                        </svg>
+                      </div>
+                      <p className="text-white text-lg font-medium">View Certificate</p>
+                    </div>
+                  </div>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 flex-grow">{cert.title}</h3>
+                  <div className="mt-auto">
+                    <p className="text-gray-400 text-sm md:text-base">{cert.issuer}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
