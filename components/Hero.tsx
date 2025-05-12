@@ -42,15 +42,15 @@ const Hero = () => {
               <span className="text-[#9D5EFF]">Creating Tomorrow, Today.</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-0 md:mb-1 mt--6">
-              Full Stack
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-0 md:mb-1 mt--6">
+            Full Stack & AI/ML
             </h1>
 
-            <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-1 md:mb-2">
-              Developer
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-1 md:mb-2">
+            Research Engineer
             </h2>
 
-            <div className="mb-2 md:mb-4">
+            <div className="mb-2 md:mb-4 mt-4">
               <TypewriterText className="text-[#37233a]" />
             </div>
 
@@ -65,10 +65,11 @@ const Hero = () => {
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">JavaScript</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">MySQL</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Unix</span>
-                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Artificial Intelligence</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Spring</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Node</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">React</span>
+                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">AI/ML</span>
+                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Research</span>
               </div>
             </div>
             <div className="flex gap-3 md:gap-4">

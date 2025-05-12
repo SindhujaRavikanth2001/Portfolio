@@ -70,32 +70,32 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "Sentiment Analysis with LLMs on Political Data",
+      description: 'This project utilizes sentiment analysis to evaluate public opinion from polling response audios. By leveraging multiple sentiment models, including Twitter-roberta, DeBERTa, DistilBERT, and TextBlob, the project analyzes transcribed speech-to-text data to categorize sentiment as positive, negative, or neutral. It further refines the analysis by associating responses with specific topics, such as immigration, healthcare, and the economy, through keyword detection. The results are visualized using confusion matrices and sentiment distributions, and statistical tests like ANOVA are applied to assess model performance. The project provides actionable insights into public sentiment, making it an effective tool for understanding social and political opinions.',
+      image: '/projects/sentiment.png',
+      technologies: 'Hugging Face LLMs, Python, ML',
+      github: 'https://github.com/SindhujaRavikanth2001/Sentiment-Analysis'
+    },
+    {
       title: 'Tourist Recommendation System',
       description: 'Tourist Recommendation System is a Flask-based web application that personalizes travel suggestions using machine learning. Users rate their interests across categories like restaurants, clubs, museums, and resorts, and the system predicts an ideal destination using a Decision Tree classifier. Built with Python, Flask, scikit-learn, and a custom dataset, the project highlights end-to-end full-stack development, ML integration into web apps, real-time user interaction, and personalized recommendation pipelines.',
       image: '/projects/tourist.png',
       technologies: 'Python, HTML, Bootstrap',
       github: 'https://github.com/SindhujaRavikanth2001/TouristRecommendationSystem'
-    },
-    {
-      title: "The Lion Cub's Journey",
-      description: "Lion Cub’s Journey is a 2D top-down survival game where players guide a young lion cub back to its cave, navigating dangers and managing health. Built using Java with the Processing framework, the game features character movement, collision detection, random enemy generation, health restoration via collectibles, and progressive difficulty across three levels. Players dodge snakes, collect meat to regain health, and advance through increasingly challenging terrains. The project showcases my skills in game design, object-oriented programming, UI creation, and interactive gameplay mechanics.",
-      image: '/projects/lion.png',
-      technologies: 'Processing',
-      github: 'https://github.com/SindhujaRavikanth2001/LionCubJourney'
-    },
-    // {
-    //   title: "Farmer's Portal",
-    //   description: 'Accomplished secure user account management as measured by a 100% successful login rate by designing and implementing a robust database schema in MySQL along with a secure login mechanism.',
-    //   image: '/projects/farmer.png',
-    //   technologies: 'HTML, CSS, JavaScript, MySQL',
-    //   github: 'https://github.com/yourusername/farmers-portal'
-    // },
+    },    
     {
       title: 'Dutchess County Bus Transportation System',
       description: 'Dutchess County Bus Transportation System (DCBTS) is a database-driven web application designed to modernize public transit management for commuters, tourists, and administrators. The system enables users to plan trips, book reservations, view schedules, and receive holiday notifications, while providing administrators with a portal to manage buses, routes, and ticketing efficiently. Built with MySQL, HTML, CSS, and JavaScript, the project emphasizes real-time bus route searches, fare estimations, data optimization through bulk loading, and secure database design, showcasing full-stack development, system modeling, and performance tuning skills.',
       image: '/projects/bus.png',
       technologies: 'Python, MySQL',
       github: 'https://github.com/SindhujaRavikanth2001/DutchessCountyBusTransportationSystem'
+    },
+    {
+      title: "The Lion Cub's Journey",
+      description: "Lion Cub's Journey is a 2D top-down survival game where players guide a young lion cub back to its cave, navigating dangers and managing health. Built using Java with the Processing framework, the game features character movement, collision detection, random enemy generation, health restoration via collectibles, and progressive difficulty across three levels. Players dodge snakes, collect meat to regain health, and advance through increasingly challenging terrains. The project showcases my skills in game design, object-oriented programming, UI creation, and interactive gameplay mechanics.",
+      image: '/projects/lion.png',
+      technologies: 'Processing',
+      github: 'https://github.com/SindhujaRavikanth2001/LionCubJourney'
     }
   ];
 

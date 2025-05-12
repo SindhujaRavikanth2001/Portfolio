@@ -39,7 +39,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-black">About Me</h2>
             
             <p className="text-black text-base md:text-xl max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
-              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span> a passionate software developer dedicated to creating robust and scalable web applications. With expertise in Java, Python, JavaScript, MySQL and much more, I thrive on tackling complex challenges, automating workflows, and mentoring teams. Currently advancing my skills through an M.S. in Computer Science, I'm driven to continuously learn and grow. I'm actively seeking opportunities to innovate, collaborate, and make a lasting impact in technology, with a future focus on AI and software development.
+              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span>, a passionate software developer and researcher with expertise in Java, Python, JavaScript, MySQL, and more. Holding a Master's degree in Computer Science, I focus on AI and software development, tackling complex challenges and automating workflows. Passionate about research, I aim to continuously innovate and contribute to impactful solutions. I'm seeking opportunities to collaborate, develop, and make a lasting impact in technology.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mb-12 md:mb-16">
