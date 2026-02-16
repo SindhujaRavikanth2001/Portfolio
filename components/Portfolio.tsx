@@ -214,48 +214,51 @@ const Portfolio = () => {
 
   const experiences: Experience[] = [
     {
-      role: "Research Assistant",
-      company: "Marist University",
-      duration: "December 2023 - Present",
+      role: "Software Engineer",
+      company: "New Jersey Department of Children and Families",
+      duration: "September 2025 – Present",
+      location: "Trenton, NJ",
+      description: [
+        "Migrating the DCF Policy Application from Azure to AWS, redesigning the system using AWS Lambda, Amazon S3, and CloudFormation to improve scalability, reliability, and maintainability.",
+        "Implementing AI-powered RAG chat systems for querying DCF policy documents by integrating Amazon Bedrock foundation models and building robust document ingestion and retrieval pipelines to deliver compliant AI-generated responses.",
+        "Developing a SimpliGov API wrapper and integrating it across DCF applications to streamline form-based workflows.",
+        "Creating and managing SimpliGov forms with API integrations used by internal departments such as HR and Ethics for automated data collection and approvals."
+      ]
+    },
+    {
+      role: "AI/ML Research Associate",
+      company: "Marist Poll",
+      duration: "December 2023 – August 2025",
       location: "Poughkeepsie, NY",
       description: [
-        "Identified security anomalies in 2M+ dark web URLs using web scraping, enhancing threat detection algorithms for cybersecurity projects.",
-        "Boosted political alignment prediction accuracy to 85% by analyzing 50,000+ social media posts using NLP and Large Language Models (LLMs) for sentiment analysis in collaboration with Marist Poll."
+        "Improved political sentiment analysis accuracy to 85% by processing 50K+ social media posts using NLP and LLMs, collaborating with cross-functional research teams.",
+        "Implemented an intelligent browser AI agent for research design workflow automation using LLMs, creating an intuitive frontend interface with React and TypeScript to streamline research methodology development and improve team productivity by 40%.",
+        "Identified security anomalies in 2M+ dark web URLs using web scraping, enhancing threat detection for cybersecurity projects."
       ]
     },
     {
       role: "Software Developer Intern",
       company: "TCPWave",
-      duration: "May 2024 - August 2024",
+      duration: "May 2024 – August 2024",
       location: "Poughkeepsie, NY",
       description: [
-        "Reduced UI load time by 40% by engineering a responsive Drupal theme using Bootstrap and resolving 20+ SCSS bugs.",
-        "Increased content migration speed by 35% by optimizing 50+ digital assets and implementing an efficient Drupal interface migration strategy.",
-        "Achieved 96% pass rate in system testing by resolving DHCP Ping Poller and Workflow issues across 150+ test scenarios.",
+        "Optimized frontend performance by engineering responsive Drupal themes using Bootstrap, reducing UI load time by 40% and resolving 20+ SCSS styling issues.",
+        "Accelerated content migration processes by 35% through optimizing 50+ digital assets and implementing efficient Drupal interface migration workflows.",
+        "Ensured high system reliability by resolving DHCP Ping Poller and Workflow issues, achieving a 96% pass rate across 150+ test scenarios through systematic debugging and testing using Hibernate and JUnit."
       ]
     },
     {
       role: "Software Developer",
       company: "TCPWave",
-      duration: "April 2022 - July 2023",
+      duration: "October 2021 – July 2023",
       location: "Hyderabad, India",
       description: [
-        "Delivered 99.9% uptime for 5,000+ daily users by designing robust Java and MySQL-based backend systems under Agile methodology.",
-        "Handled over 1,000 API requests per day by designing and optimizing 15+ RESTful APIs used across third-party tools like Postman and Node.js.",
-        "Boosted operational efficiency by 20% by automating internal workflows with user-level approval mechanisms.",
-        "Improved network visibility by 70% by engineering IP-to-identity reporting via Microsoft Active Directory for 1,000+ users.",
-        "Enhanced alert delivery speed by implementing a multi-channel alerting system, reducing downtime response latency.",
-        "Ensured code quality using CI/CD pipelines and tools like Jenkins, Git, and SonarQube.",
-      ]
-    },
-    {
-      role: "Software Developer Intern",
-      company: "TCPWave",
-      duration: "October 2021 - April 2022",
-      location: "Hyderabad, India",
-      description: [
-        "Increased DDI visibility by 65% through adaptive dashboards with advanced visualizations, streamlining real-time system monitoring.",
-        "Resolved 100+ dev tickets by debugging production code and deploying rapid enhancements, shortening release cycles."
+        "Delivered 99.9% uptime for 5,000+ daily users by designing and maintaining robust Java and MySQL-based backend systems using Agile development with design patterns and microservices architecture.",
+        "Handled 1,000+ API requests daily by designing, developing, and optimizing 30+ RESTful APIs with comprehensive testing using Postman, ensuring seamless integration with frontend applications.",
+        "Improved network visibility by 70% by engineering an IP-to-identity reporting system integrated with Microsoft Active Directory, serving 500+ users with real-time data access.",
+        "Boosted system monitoring by implementing a multi-channel alerting system (Teams, Telegram, email), reducing incident response time by 60%, and minimizing system downtime.",
+        "Streamlined development productivity by building command-line interfaces on Linux servers for frequent development and administrative tasks, improving team efficiency across multiple departments by 20%.",
+        "Maintained code quality using CI/CD pipelines with Jenkins, Git, Docker, and SonarQube, ensuring consistent deployment practices and enabling 5x faster release cycles with automated testing integration."
       ]
     }
   ];

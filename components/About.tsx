@@ -39,7 +39,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-black">About Me</h2>
             
             <p className="text-black text-base md:text-xl max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
-              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span>, a passionate software developer and researcher with expertise in Java, Python, JavaScript, MySQL, and more. Holding a Master's degree in Computer Science, I focus on AI and software development, tackling complex challenges and automating workflows. Passionate about research, I aim to continuously innovate and contribute to impactful solutions. I'm seeking opportunities to collaborate, develop, and make a lasting impact in technology.
+              Hello, I'm <span className="text-[#843052] font-semibold">Sindhuja Ravikanth</span>, a passionate software developer and researcher with expertise in AWS, Java, Python, JavaScript, MySQL, and more. Holding a Master's degree in Computer Science, I focus on AI and software development, tackling complex challenges and automating workflows with AWS and cloud-native systems as a core part of my work. Passionate about research, I aim to continuously innovate and contribute to impactful solutions. I'm seeking opportunities to collaborate, develop, and make a lasting impact in technology.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mb-12 md:mb-16">
@@ -78,7 +78,7 @@ const About = () => {
                       <p className="text-gray-400 text-xs md:text-sm mt-1">Continuous learning journey</p>
                     </div>
                   </div>
-                  <span className="text-4xl md:text-5xl font-bold text-white">3.5</span>
+                  <span className="text-4xl md:text-5xl font-bold text-white">4+</span>
                 </div>
                 <span className="absolute bottom-4 right-6 text-gray-400 text-xl">↗</span>
               </motion.button>
@@ -103,7 +103,7 @@ const About = () => {
                       <p className="text-gray-400 text-xs md:text-sm mt-1">Innovative web & mobile solutions crafted</p>
                     </div>
                   </div>
-                  <span className="text-4xl md:text-5xl font-bold text-white">3</span>
+                  <span className="text-4xl md:text-5xl font-bold text-white">4</span>
                 </div>
                 <span className="absolute bottom-4 right-6 text-gray-400 text-xl">↗</span>
               </motion.button>

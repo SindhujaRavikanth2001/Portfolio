@@ -42,29 +42,25 @@ const Hero = () => {
               <span className="text-[#9D5EFF]">Creating Tomorrow, Today.</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-0 md:mb-1 mt--6">
-            Full Stack & AI/ML
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-0 md:mb-1 mt--6 text-black">
+              Full Stack & AI/ML <span className="text-white">Engineer</span>
             </h1>
-
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-1 md:mb-2">
-            Research Engineer
-            </h2>
 
             <div className="mb-2 md:mb-4 mt-4">
               <TypewriterText className="text-[#37233a]" />
             </div>
 
             <p className="text-black text-base md:text-lg max-w-2xl mb-2 md:mb-4">
-              I bring 3.5 years of experience turning ideas into scalable, high-performance software solutions. From front-end interfaces to robust backend systems, I believe great software combines creativity, precision, and a deep focus on real-world impact.
+              I bring 4+ years of experience turning ideas into scalable, high-performance software solutions. From front-end interfaces to robust backend systems, I believe great software combines creativity, precision, and a deep focus on real-world impact.
             </p>
 
             <div className="space-y-4 md:space-y-6">
               <div className="flex flex-wrap gap-2 md:gap-4">
+                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">AWS</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Java</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Python</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">JavaScript</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">MySQL</span>
-                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Unix</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Spring</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Node</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">React</span>
