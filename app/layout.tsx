@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio | Sindhuja Ravikanth",
-  description: "Full Stack Developer Portfolio showcasing my projects and skills",
-  keywords: ["Full Stack Developer", "Web Development", "Java", "Python", ,"MySQL", "JavaScript", "Portfolio"],
+  description: "AI-focused software engineer portfolio: agentic AI, RAG, cloud-native AWS systems, and full-stack development.",
+  keywords: ["AI Engineer", "Software Engineer", "RAG", "AWS", "Full Stack", "Java", "Python", "TypeScript", "React", "MySQL", "Portfolio"],
   icons: {
     icon: '/sr.png',
   },

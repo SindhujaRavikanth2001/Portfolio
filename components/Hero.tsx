@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-0 md:mb-1 mt--6 text-black">
-              Full Stack & AI/ML <span className="text-white">Engineer</span>
+              AI/ML & Full Stack <span className="text-white">Engineer</span>
             </h1>
 
             <div className="mb-2 md:mb-4 mt-4">
@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
 
             <p className="text-black text-base md:text-lg max-w-2xl mb-2 md:mb-4">
-              I bring 4+ years of experience turning ideas into scalable, high-performance software solutions. From front-end interfaces to robust backend systems, I believe great software combines creativity, precision, and a deep focus on real-world impact.
+              I bring 4.5+ years of experience building full-stack and AI-powered software, from agent workflows and RAG systems to scalable cloud backends on AWS. I focus on clarity, performance, and real-world impact across the stack.
             </p>
 
             <div className="space-y-4 md:space-y-6">
@@ -65,7 +65,7 @@ const Hero = () => {
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Node</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">React</span>
                 <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">AI/ML</span>
-                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Research</span>
+                <span className="px-3 py-1.5 md:px-4 md:py-2 bg-[#1E1538] rounded-full text-white text-sm md:text-base">Agents</span>
               </div>
             </div>
             <div className="flex gap-3 md:gap-4">

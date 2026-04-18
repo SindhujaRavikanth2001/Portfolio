@@ -48,7 +48,7 @@ export default function Contact() {
               <div className="rounded-2xl bg-[#1e1538] backdrop-blur-xl p-4 md:p-6 h-full flex flex-col justify-center">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <p className="text-gray-300 text-base">Open to exciting new opportunities! Feel free to reach out — I'm always happy to connect and collaborate.</p>
+                    <p className="text-gray-300 text-base">Open to exciting new opportunities! Feel free to reach out. I'm always happy to connect and collaborate.</p>
                   </div>
                   <FiShare2 className="text-[#9D5EFF] text-2xl md:text-3xl" />
                 </div>

@@ -219,21 +219,25 @@ const Portfolio = () => {
       duration: "September 2025 – Present",
       location: "Trenton, NJ",
       description: [
-        "Migrating the DCF Policy Application from Azure to AWS, redesigning the system using AWS Lambda, Amazon S3, and CloudFormation to improve scalability, reliability, and maintainability.",
-        "Implementing AI-powered RAG chat systems for querying DCF policy documents by integrating Amazon Bedrock foundation models and building robust document ingestion and retrieval pipelines to deliver compliant AI-generated responses.",
-        "Developing a SimpliGov API wrapper and integrating it across DCF applications to streamline form-based workflows.",
-        "Creating and managing SimpliGov forms with API integrations used by internal departments such as HR and Ethics for automated data collection and approvals."
+        "Improved system scalability and reduced infrastructure overhead by 40% by migrating the DCF Policy platform to a serverless AWS architecture (Lambda, S3, DynamoDB) using CloudFormation and Terraform.",
+        "Enhanced document retrieval speed by 50% and improved answer relevance by 30% by building a RAG-based policy search system using Amazon Bedrock, enabling accurate, context-aware responses across large policy datasets.",
+        "Reduced manual policy lookup effort by 60% by developing agentic AI workflows using LangGraph, enabling multi-step reasoning and structured decision support.",
+        "Improved retrieval consistency and reduced query latency by 35% by implementing embedding, chunking, and indexing pipelines for large-scale document processing.",
+        "Decreased manual processing time by 50% across internal workflows by building a SimpliGov API integration layer, automating form submissions and approval processes for HR and compliance teams.",
+        "Accelerated deployment cycles by 3x and reduced environment setup time by 40% by implementing cloud-native serverless infrastructure with infrastructure-as-code."
       ]
     },
     {
-      role: "AI/ML Research Associate",
+      role: "AI/ML Engineer",
       company: "Marist Poll",
       duration: "December 2023 – August 2025",
       location: "Poughkeepsie, NY",
       description: [
-        "Improved political sentiment analysis accuracy to 85% by processing 50K+ social media posts using NLP and LLMs, collaborating with cross-functional research teams.",
-        "Implemented an intelligent browser AI agent for research design workflow automation using LLMs, creating an intuitive frontend interface with React and TypeScript to streamline research methodology development and improve team productivity by 40%.",
-        "Identified security anomalies in 2M+ dark web URLs using web scraping, enhancing threat detection for cybersecurity projects."
+        "Increased research team efficiency by 40% by building a browser-based AI agent using LangChain + Playwright, orchestrating multi-step workflows for web navigation, data extraction, and structured research synthesis.",
+        "Expanded threat intelligence coverage across 2M+ URLs by developing an agent-driven web crawler, enabling large-scale data extraction and automated analysis.",
+        "Augmented the RAG pipeline with SQL-based retrieval, enabling multi-source querying across external web data and internal structured datasets.",
+        "Built a transformer-based text analysis system using Hugging Face open-source models with LoRA/QLoRA fine-tuning, enabling classification, entity extraction, and insight generation from 50K+ social media posts.",
+        "Improved usability and transparency of AI systems by developing a React + TypeScript interface integrated with agent workflows, enabling real-time interaction and execution of AI-driven processes."
       ]
     },
     {
@@ -242,9 +246,9 @@ const Portfolio = () => {
       duration: "May 2024 – August 2024",
       location: "Poughkeepsie, NY",
       description: [
-        "Optimized frontend performance by engineering responsive Drupal themes using Bootstrap, reducing UI load time by 40% and resolving 20+ SCSS styling issues.",
-        "Accelerated content migration processes by 35% through optimizing 50+ digital assets and implementing efficient Drupal interface migration workflows.",
-        "Ensured high system reliability by resolving DHCP Ping Poller and Workflow issues, achieving a 96% pass rate across 150+ test scenarios through systematic debugging and testing using Hibernate and JUnit."
+        "Reduced UI load time by 40% by engineering responsive Drupal themes using Bootstrap and resolving 20+ SCSS styling issues.",
+        "Accelerated content migration efficiency by 35% by optimizing 50+ digital assets and implementing improved Drupal migration workflows.",
+        "Improved system reliability to achieve a 96% test pass rate across 150+ scenarios by debugging DHCP Ping Poller and workflow issues using Hibernate and JUnit."
       ]
     },
     {
@@ -253,12 +257,11 @@ const Portfolio = () => {
       duration: "October 2021 – July 2023",
       location: "Hyderabad, India",
       description: [
-        "Delivered 99.9% uptime for 5,000+ daily users by designing and maintaining robust Java and MySQL-based backend systems using Agile development with design patterns and microservices architecture.",
-        "Handled 1,000+ API requests daily by designing, developing, and optimizing 30+ RESTful APIs with comprehensive testing using Postman, ensuring seamless integration with frontend applications.",
-        "Improved network visibility by 70% by engineering an IP-to-identity reporting system integrated with Microsoft Active Directory, serving 500+ users with real-time data access.",
-        "Boosted system monitoring by implementing a multi-channel alerting system (Teams, Telegram, email), reducing incident response time by 60%, and minimizing system downtime.",
-        "Streamlined development productivity by building command-line interfaces on Linux servers for frequent development and administrative tasks, improving team efficiency across multiple departments by 20%.",
-        "Maintained code quality using CI/CD pipelines with Jenkins, Git, Docker, and SonarQube, ensuring consistent deployment practices and enabling 5x faster release cycles with automated testing integration."
+        "Delivered 99.9% system uptime for 5,000+ daily users by designing and maintaining Java and MySQL-based backend systems using microservices architecture and design patterns, ensuring scalability and reliability.",
+        "Handled 1,000+ API requests daily by developing and optimizing 30+ RESTful APIs, enabling seamless integration across frontend applications and improving overall system performance.",
+        "Improved network visibility by 70% and system observability by 65% by building an IP-to-identity reporting system integrated with Active Directory and interactive monitoring dashboards.",
+        "Reduced incident response time by 60% and accelerated release cycles by 5x by implementing multi-channel alerting systems (Teams, Telegram, email) and CI/CD pipelines using Jenkins, Docker, and SonarQube.",
+        "Increased team productivity and user engagement by building CLI automation tools on Linux and enhancing frontend applications using Angular and JavaScript, resulting in 20% efficiency gains and 40% higher web engagement."
       ]
     }
   ];
