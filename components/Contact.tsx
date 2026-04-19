@@ -135,7 +135,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="mt-8 text-center text-[#1e1538] text-sm">© 2025 - All Rights Reserved.</div>
+        <div className="mt-8 text-center text-[#1e1538] text-sm">© 2026 - All Rights Reserved.</div>
         <div className="text-center text-[#1e1538] text-sm">Sindhuja Ravikanth</div>
       </div>
     </section>

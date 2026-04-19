@@ -47,7 +47,7 @@ const About = () => {
                 href="/Sindhuja_Ravikanth_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 bg-[#573c5e] text-white px-4 py-2.5 md:px-6 md:py-3 rounded-lg hover:bg-[#4B2B4D] hover:text-white transition-colors text-sm md:text-base"
               >
-                <span className="text-xl">📄</span> Download CV
+                <span className="text-xl">📄</span> Download Resume
               </a>
               <button
                 onClick={() => scrollToSection('contact')}
